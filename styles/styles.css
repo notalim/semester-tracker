@@ -1,18 +1,3 @@
-/* 
-
-Background (Jet Black): 333533
-(Eerie Black): 242423
-(Saffron): F5CB5C
-(Alabaster(Gray)):E8EDDF
-Platinum:CFDBD5
-
-Battery:
-Orange: ffb800
-Red: ff5714
-neon green: 89fc00
-darker bright green: 29bf12
-
- */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
 
 * {
@@ -57,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Use viewport height to make sure the content is centered on the screen */
+  min-height: 90vh; /* Use viewport height to make sure the content is centered on the screen */
   padding-bottom: 80px; /* Add some padding to the bottom to account for the footer */
 }
 
@@ -74,7 +59,7 @@ body {
 .footer {
     background-color: var(--penn-blue);
     padding: 20px 0;
-
+    height: 10vh;
     bottom: 0;
     width: 100%;
 }
