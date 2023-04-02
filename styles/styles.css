@@ -1,4 +1,3 @@
-
 /* 
 
 Background (Jet Black): 333533
@@ -14,29 +13,50 @@ neon green: 89fc00
 darker bright green: 29bf12
 
  */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+:root {
+    --alice-blue: #d8e1e9;
+    --slate-gray: #6d778c;
+    --penn-blue: #001242;
+    --lapis-lazuli: #005384;
+    --blue-ncs: #0094c6;
+}
 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #333533;
-    color: #E8EDDF;
+    background-color: var(--slate-gray);
+    color: var(--alice-blue);
 }
 
 #battery-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #242423;
+    background-color: transparent;
     height: 40px;
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
     overflow: hidden;
-    border: 2px solid #E8EDDF;
+    border: 2px solid #e8eddf;
+}
+
+#countdown {
+    margin-top: 20px;
+    line-height: 2; /* Add line spacing for the text */
 }
 
 .subdivision {
-    background-color: #F5CB5C;
+    background-color: #f5cb5c;
     height: 100%;
 }
 
@@ -45,7 +65,7 @@ body {
 }
 
 .footer {
-    background-color: #242423;
+    background-color: var(--penn-blue);
     padding: 20px 0;
     position: fixed;
     bottom: 0;
@@ -53,11 +73,41 @@ body {
 }
 
 .footer a {
-    color: #E8EDDF;
+    color: #e8eddf;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px 10px;
+    transition: ease-in-out 0.2s;
 }
 
 .footer a:hover {
-    color: #CFDBD5;
+    color: var(--blue-ncs);
+}
+
+@keyframes fillPassed {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* The final width will be set by JavaScript */
+    }
+}
+
+@keyframes fillLeft {
+    0% {
+        width: 100%;
+    }
+    100% {
+        /* The final width will be set by JavaScript */
+    }
+}
+
+.subdivision.passed {
+    /* //zbackground-color: #f5cb5c; */
+    height: 100%;
+    animation: fillPassed 2s ease-out forwards; /* Apply the passed subdivision animation */
+}
+
+.subdivision.left {
+    height: 100%;
+    animation: fillLeft 2s ease-out forwards; /* Apply the remaining subdivision animation */
 }

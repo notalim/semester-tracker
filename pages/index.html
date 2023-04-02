@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semester Countdown</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
-    <h1>Semester Countdown</h1>
-    <div id="battery-bar">
-        <!-- Add subdivisions here -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Semester Countdown</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+        <h1>Semester Countdown</h1>
+        <div id="battery-bar">
+            <!-- Add subdivisions here -->
+        </div>
+        <div id="countdown">
+            <!-- ... -->
+        </div>
     </div>
-    <div id="countdown">
-        <p id="months-left"></p>
-        <p id="weeks-left"></p>
-        <p id="days-left"></p>
-        <p id="working-days-left"></p>
-    </div>
-    <footer class="footer">
-        <p>&copy; notalim & aidangio, 2023</p>
-        <p><a href="https://github.com/notalim" target="_blank">notalim's GitHub</a> | <a href="https://github.com/aidangio" target="_blank">aidangio's GitHub</a></p>
-    </footer>
-    <script src="../scripts/battery.js"></script>
-</body>
+        <div id="countdown">
+            <p id="months-left"></p>
+            <p id="weeks-left"></p>
+            <p id="days-left"></p>
+            <p id="working-days-left"></p>
+        </div>
+        <footer class="footer">
+            <p>&copy; notalim & aidangio, 2023</p>
+            <p>
+                <a href="https://github.com/notalim" target="_blank"
+                    >notalim's GitHub</a
+                >
+                |
+                <a href="https://github.com/aidangio" target="_blank"
+                    >aidangio's GitHub</a
+                >
+            </p>
+        </footer>
+        <script src="../scripts/battery.js"></script>
+    </body>
 </html>
