@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#battery-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subdivision {
+    background-color: #4caf50;
+    height: 100%;
+}
+
+#countdown {
+    margin-top: 20px;
+}
