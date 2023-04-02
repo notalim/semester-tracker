@@ -58,16 +58,19 @@ body {
 
 .footer {
     background-color: var(--penn-blue);
-    padding: 20px 0;
     height: 10vh;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
 }
 
 .footer a {
     color: #e8eddf;
     text-decoration: none;
-    margin: 10px 10px;
     transition: ease-in-out 0.2s;
 }
 
