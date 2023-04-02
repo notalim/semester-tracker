@@ -31,11 +31,12 @@ darker bright green: 29bf12
 }
 
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
     background-color: var(--slate-gray);
     color: var(--alice-blue);
 }
+
+
 
 #battery-bar {
     display: flex;
@@ -48,10 +49,19 @@ body {
     border-radius: 5px;
     overflow: hidden;
     border: 2px solid #e8eddf;
+    margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use viewport height to make sure the content is centered on the screen */
+  padding-bottom: 80px; /* Add some padding to the bottom to account for the footer */
 }
 
 #countdown {
-    margin-top: 20px;
     line-height: 2; /* Add line spacing for the text */
 }
 
@@ -60,14 +70,11 @@ body {
     height: 100%;
 }
 
-#countdown {
-    margin-top: 20px;
-}
 
 .footer {
     background-color: var(--penn-blue);
     padding: 20px 0;
-    position: fixed;
+
     bottom: 0;
     width: 100%;
 }
@@ -102,7 +109,6 @@ body {
 }
 
 .subdivision.passed {
-    /* //zbackground-color: #f5cb5c; */
     height: 100%;
     animation: fillPassed 2s ease-out forwards; /* Apply the passed subdivision animation */
 }
